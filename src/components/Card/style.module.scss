@@ -1,0 +1,25 @@
+.card{
+  background: white;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.nav{
+  max-width: 265px;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tagContainer{
+  padding: 1.5rem 1.125rem 2.25rem 1.5rem;
+}
+
+.roadMap:not(.feedback){
+  padding: 1.5rem 1.5rem 1.75rem;
+}
+
+@media(min-width: 1440px){
+  .nav{
+    max-width: 255px;
+  }
+}

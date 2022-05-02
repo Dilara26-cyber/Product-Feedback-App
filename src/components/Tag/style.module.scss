@@ -1,0 +1,38 @@
+.tag {
+  padding: 0.5rem 1.15rem;
+  border-radius: 10px;
+  background-color: var(--magnolia-gray);
+  color: var(--ultramarine-blue);
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  transition: 0.3s background-color ease, 0.3s color ease;
+
+  &:hover {
+    background-color: var(--hover-blue);
+  }
+
+  &:active {
+    background-color: var(--ultramarine-blue);
+    color: var(--white);
+  }
+}
+
+.tag.icon {
+  color: var(--dark-blue);
+  gap: 0.5rem;
+  & svg {
+    color: var(--ultramarine-blue);
+  }
+}
+
+.tag.active{
+  background-color: var(--ultramarine-blue);
+  color: var(--white);
+}
+
+@media (min-width: 768px) {
+  .tag.icon {
+    flex-direction: column;
+  }
+}
