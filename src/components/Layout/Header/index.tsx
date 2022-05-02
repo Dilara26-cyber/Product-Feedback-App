@@ -1,7 +1,13 @@
 import cc from "classcat";
-import { useState } from "react";
+import {
+	useContext,
+	useState,
+} from "react";
 
-import useSelectTag from "../../../hooks/useSelectTag";
+import {
+	TagContextType,
+	TagSelectContext,
+} from "../../../context/TagSelectProvider";
 import Card from "../../Card";
 import Tag from "../../Tag";
 import Navbar from "../Navbar";
@@ -12,7 +18,7 @@ const Header = () => {
 
   const handleVisible = () => setVisible(!visible);
 
-  const { tags, selectedTag, handleTagSelect } = useSelectTag();
+  const { tags, handleTagSelect, selectedTag } = useContext(TagSelectContext) as TagContextType;
 
   return (
     <header>
