@@ -1,0 +1,9 @@
+.nav{
+  height: 4.5rem;
+  padding: 24px 16px;
+  color: var(--white);
+  justify-content: space-between;
+  & svg{
+    font-size: 1.75rem;
+  }
+}

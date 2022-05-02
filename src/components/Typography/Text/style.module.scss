@@ -1,0 +1,22 @@
+.main,
+.secondary {
+  font-size: 0.8125rem;
+}
+
+.main {
+  color: var(--dark-gray);
+}
+
+.secondary {
+  opacity: 0.75;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .main {
+    font-size: 1rem;
+  }
+  .secondary {
+    font-size: 0.9375rem;
+  }
+}
