@@ -1,0 +1,12 @@
+.container {
+  position: relative;
+  & h4,
+  p:not(.comment) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.comment{
+  display: inline-flex;
+  float: right;
+}

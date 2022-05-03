@@ -21,12 +21,12 @@ const Select = () => {
 
   const [visible, setVisible] = useState(false);
 
-  const handleVisible = () => setVisible(prev => !prev);
+  const handleVisible = () => setVisible((prev) => !prev);
 
-  const handleFilter = (filter : string) => {
+  const handleFilter = (filter: string) => {
     handleFilterSelect(filter);
     setVisible(false);
-  }
+  };
 
   return (
     <section className={cm.select}>
@@ -34,22 +34,22 @@ const Select = () => {
         Sort by: <strong>{selectedFilter}</strong>{" "}
         {visible ? <UpOutlined /> : <DownOutlined />}
       </Text>
-      { visible && (
+      {visible && (
         <ul>
-        {filters.map((filter) => (
-          <li
-            className={cc([
-              "flex",
-              selectedFilter === filter ? cm.selected : "",
-            ])}
-            key={filter}
-            onClick={() => handleFilter(filter)}
-          >
-            {filter}
-            {selectedFilter === filter && <CheckOutlined />}
-          </li>
-        ))}
-      </ul>
+          {filters.map((filter) => (
+            <li
+              className={cc([
+                "flex",
+                selectedFilter === filter ? cm.selected : "",
+              ])}
+              key={filter}
+              onClick={() => handleFilter(filter)}
+            >
+              {filter}
+              {selectedFilter === filter && <CheckOutlined />}
+            </li>
+          ))}
+        </ul>
       )}
     </section>
   );

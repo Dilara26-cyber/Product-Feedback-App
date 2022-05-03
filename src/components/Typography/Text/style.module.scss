@@ -1,5 +1,7 @@
 .main,
-.secondary, .select {
+.secondary,
+.select,
+.comment {
   font-size: 0.8125rem;
 }
 
@@ -12,18 +14,23 @@
   font-weight: 500;
 }
 
-.select{
+.select {
   color: var(--ghost-white);
 }
 
+.comment {
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+
 @media (min-width: 768px) {
-  .main {
+  .main, .comment {
     font-size: 1rem;
   }
   .secondary {
     font-size: 0.9375rem;
   }
-  .select{
+  .select {
     font-size: 0.875rem;
   }
 }

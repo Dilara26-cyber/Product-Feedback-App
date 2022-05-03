@@ -6,7 +6,7 @@ export interface TextProps extends React.HTMLAttributes<HTMLParagraphElement> {
   /**
    * Determines type -therefore styles- for the text component.
    */
-  type: "main" | "secondary" | "select";
+  type: "main" | "secondary" | "select" | "comment";
 }
 const Text = ({
   type,

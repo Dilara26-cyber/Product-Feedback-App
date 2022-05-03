@@ -7,10 +7,21 @@ export interface CardProps extends React.HTMLAttributes<HTMLElement> {
   isTags?: boolean;
 }
 
-const Card = ({ isTags = false, type, children, className, ...htmlElement }: CardProps) => {
+const Card = ({
+  isTags = false,
+  type,
+  children,
+  className,
+  ...htmlElement
+}: CardProps) => {
   return (
     <section
-      className={cc([cm.card, cm[type], isTags ? cm.tagContainer : cm.roadMap, className || ""])}
+      className={cc([
+        cm.card,
+        cm[type],
+        isTags ? cm.tagContainer : cm.roadMap,
+        className || "",
+      ])}
       {...htmlElement}
     >
       {children}

@@ -1,4 +1,6 @@
 .tag {
+  max-width: fit-content;
+  display: inline-flex;
   padding: 0.5rem 1.15rem;
   border-radius: 10px;
   background-color: var(--magnolia-gray);
@@ -7,6 +9,7 @@
   font-size: 13px;
   line-height: 19px;
   transition: 0.3s background-color ease, 0.3s color ease;
+  text-transform: capitalize;
 
   &:hover {
     background-color: var(--hover-blue);
