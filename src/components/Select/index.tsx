@@ -23,6 +23,11 @@ const Select = () => {
 
   const handleVisible = () => setVisible(prev => !prev);
 
+  const handleFilter = (filter : string) => {
+    handleFilterSelect(filter);
+    setVisible(false);
+  }
+
   return (
     <section className={cm.select}>
       <Text type="select" onClick={handleVisible}>
@@ -38,7 +43,7 @@ const Select = () => {
               selectedFilter === filter ? cm.selected : "",
             ])}
             key={filter}
-            onClick={() => handleFilterSelect(filter)}
+            onClick={() => handleFilter(filter)}
           >
             {filter}
             {selectedFilter === filter && <CheckOutlined />}
