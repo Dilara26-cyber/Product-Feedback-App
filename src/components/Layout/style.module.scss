@@ -1,10 +1,12 @@
 .nav{
   height: 10vh;
-  padding: 24px 16px;
+  padding: 24px 0;
   color: var(--white);
-  justify-content: space-between;
   & svg{
     font-size: 1.75rem;
+  }
+  & section:first-of-type{
+    justify-content: space-between;
   }
 }
 
@@ -34,6 +36,7 @@
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 0;
   transition: 0.2s opacity ease;
+  pointer-events: none;
 }
 
 .overlay.shown {

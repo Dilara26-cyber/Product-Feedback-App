@@ -1,13 +1,16 @@
 import "./styles/globals.scss";
 
 import FeedbackAppRoutes from "./components/Routes";
+import FilterProvider from "./context/FilterProvider";
 import TagSelectProvider from "./context/TagSelectProvider";
 
 function App() {
   return (
-    <TagSelectProvider>
-      <FeedbackAppRoutes />
-    </TagSelectProvider>
+    <FilterProvider>
+      <TagSelectProvider>
+        <FeedbackAppRoutes />
+      </TagSelectProvider>
+    </FilterProvider>
   );
 }
 

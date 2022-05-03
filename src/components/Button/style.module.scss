@@ -1,0 +1,22 @@
+.btn{
+  padding: 0.55rem 1rem;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  transition: 0.25s background-color ease;
+  & svg{
+    font-size: 10px;
+  }
+}
+
+.btn.icon{
+  gap: 0.25rem;
+}
+
+.create{
+  background-color: var(--electric-purple);
+  color: var(--white);
+  &:hover{
+    background-color: var(--light-purple);
+  }
+}

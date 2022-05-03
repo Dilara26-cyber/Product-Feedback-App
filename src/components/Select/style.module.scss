@@ -1,0 +1,36 @@
+.select {
+  padding-right: 1rem;
+  position: relative;
+
+  & strong, svg, li{
+    cursor: pointer;
+  }
+
+  & ul {
+    position: absolute;
+    width: 255px;
+    top: 3rem;
+    background: #ffffff;
+    box-shadow: 0px 10px 40px -7px rgba(55, 63, 104, 0.350492);
+    border-radius: 10px;
+
+    & li {
+      padding: 14px 24px;
+      color: var(--dark-gray);
+      transition: 0.25s color ease;
+      
+      &:not(:last-child) {
+        border-bottom: 1px solid var(--border-color);
+      }
+      &:hover {
+        color: var(--electric-purple);
+      }
+    }
+
+  }
+}
+
+ul li.selected {
+  color: var(--electric-purple);
+  justify-content: space-between;
+}

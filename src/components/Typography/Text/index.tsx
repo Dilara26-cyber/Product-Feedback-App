@@ -3,7 +3,10 @@ import cc from "classcat";
 import cm from "./style.module.scss";
 
 export interface TextProps extends React.HTMLAttributes<HTMLParagraphElement> {
-  type: "main" | "secondary";
+  /**
+   * Determines type -therefore styles- for the text component.
+   */
+  type: "main" | "secondary" | "select";
 }
 const Text = ({
   type,

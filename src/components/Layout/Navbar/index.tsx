@@ -13,6 +13,7 @@ export interface NavbarProps {
 const Navbar = ({ visible, handleVisible }: NavbarProps) => {
   return (
     <nav className={cc(["gradient", "flex", cm.nav])}>
+      <section className="container flex">
       <section>
         <h4>Frontend Mentor</h4>
         <Text type="secondary">Feedback Board</Text>
@@ -22,6 +23,7 @@ const Navbar = ({ visible, handleVisible }: NavbarProps) => {
       ) : (
         <BiMenu onClick={handleVisible} />
       )}
+      </section>
     </nav>
   );
 };

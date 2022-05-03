@@ -1,5 +1,5 @@
 .main,
-.secondary {
+.secondary, .select {
   font-size: 0.8125rem;
 }
 
@@ -12,11 +12,18 @@
   font-weight: 500;
 }
 
+.select{
+  color: var(--ghost-white);
+}
+
 @media (min-width: 768px) {
   .main {
     font-size: 1rem;
   }
   .secondary {
     font-size: 0.9375rem;
+  }
+  .select{
+    font-size: 0.875rem;
   }
 }

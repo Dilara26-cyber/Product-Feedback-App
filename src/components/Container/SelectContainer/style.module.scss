@@ -1,0 +1,9 @@
+.container{
+  padding: 0.625rem 0;
+  max-width: 825px;
+  background-color: var(--rhino-blue);
+  margin: 0 auto;
+  & section{
+    justify-content: space-between;
+  }
+}
